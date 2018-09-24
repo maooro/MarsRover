@@ -9,7 +9,7 @@ $(document).ready(function () {
             new_y = 9;
 
         if (GridField.checkObstacle(MarsRover.getx(), new_y) == 1) {
-            GridField.log('<strong>OBSTACLE DETECTED, POSITION RESTORED<strong>');
+            GridField.log('<strong>' + MarsRover.getx() + ', ' + new_y + ': OBSTACLE DETECTED, POSITION RESTORED<strong>');
             MarsRover.init();
         }
         else
@@ -21,7 +21,7 @@ $(document).ready(function () {
             new_y = 0;
 
         if (GridField.checkObstacle(MarsRover.getx(), new_y) == 1) {
-            GridField.log('<strong>OBSTACLE DETECTED, POSITION RESTORED<strong>');
+            GridField.log('<strong>' + MarsRover.getx() + ', ' + new_y + ': OBSTACLE DETECTED, POSITION RESTORED<strong>');
             MarsRover.init();
         }
         else
@@ -33,7 +33,7 @@ $(document).ready(function () {
             new_x = 9;
 
         if (GridField.checkObstacle(new_x, MarsRover.gety()) == 1) {
-            GridField.log('<strong>OBSTACLE DETECTED, POSITION RESTORED<strong>');
+            GridField.log('<strong>' + new_x + ', ' +  MarsRover.gety() + ': OBSTACLE DETECTED, POSITION RESTORED<strong>');
             MarsRover.init();
         }
         else
@@ -45,7 +45,7 @@ $(document).ready(function () {
             new_x = 0;
 
         if (GridField.checkObstacle(new_x, MarsRover.gety()) == 1) {
-            GridField.log('<strong>OBSTACLE DETECTED, POSITION RESTORED<strong>');
+            GridField.log('<strong>' + new_x + ', ' +  MarsRover.gety() + ': OBSTACLE DETECTED, POSITION RESTORED<strong>');
             MarsRover.init();
         }
         else
