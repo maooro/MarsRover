@@ -72,7 +72,16 @@ var GridField = (function () {
                 let rndX = parseInt(Math.random() * (10 - 0));
                 let rndY = parseInt(Math.random() * (10 - 0));
 
-                obstacles.push({ 'x': rndX, 'y': rndY })
+                let strArray = [];
+                let strX = rndX.toString(), strY = rndY.toString();
+
+                if (rndX == rndY == 5) {
+                    i--;
+                }
+                else {
+                    obstacles.push({ 'x': rndX, 'y': rndY })
+                    strArray.push(strX + strY);
+                }
             }
 
             console.log(obstacles);
